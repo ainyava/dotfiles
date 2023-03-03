@@ -1,0 +1,10 @@
+{
+  "registry-mirrors": ["https://registry.docker.ir"],
+  "data-root": "/mnt/linux/docker",
+  "default-address-pools": [
+    {
+                "base" : "172.177.0.0/16",
+                "size":24
+        }
+  ]
+}
