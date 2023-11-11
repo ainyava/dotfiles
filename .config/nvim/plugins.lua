@@ -1,8 +1,6 @@
 local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
-
-
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
@@ -18,12 +16,13 @@ Plug 'ap/vim-css-color'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug('nvim-telescope/telescope.nvim', { tag = '0.1.4' })
 -- Javascript
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
-Plug('styled-components/vim-styled-components', { branch= 'main' })
+Plug('styled-components/vim-styled-components', { branch = 'main' })
 Plug 'jparise/vim-graphql'
-Plug('neoclide/coc.nvim', {branch= 'release'})
-
+Plug('neoclide/coc.nvim', {branch = 'release'})
 vim.call('plug#end')
