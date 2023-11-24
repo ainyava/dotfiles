@@ -1,0 +1,33 @@
+local Plug = vim.fn['plug#']
+
+vim.call('plug#begin', '~/.config/nvim/plugged')
+Plug('crispgm/nvim-tabline')
+Plug('nvim-tree/nvim-tree.lua')
+Plug('nvim-tree/nvim-web-devicons')
+Plug('Xuyuanp/nerdtree-git-plugin')
+Plug('ryanoasis/vim-devicons')
+Plug('tiagofumo/vim-nerdtree-syntax-highlight')
+Plug('preservim/nerdcommenter')
+Plug('dense-analysis/ale')
+Plug('ctrlpvim/ctrlp.vim')
+Plug('itchyny/vim-gitbranch')
+Plug('leafgarland/typescript-vim')
+Plug('pangloss/vim-javascript')
+Plug('mattn/emmet-vim')
+Plug('ap/vim-css-color')
+Plug('godlygeek/tabular')
+Plug('plasticboy/vim-markdown')
+Plug('drewtempelmeyer/palenight.vim')
+Plug('nvim-lua/plenary.nvim')
+Plug('nvim-telescope/telescope.nvim', { tag = '0.1.4' })
+Plug('xiyaowong/transparent.nvim')
+-- Javascript
+Plug('pangloss/vim-javascript')
+Plug('leafgarland/typescript-vim')
+Plug('peitalin/vim-jsx-typescript')
+Plug('styled-components/vim-styled-components', { branch = 'main' })
+Plug('jparise/vim-graphql')
+Plug('neoclide/coc.nvim', {branch = 'release'})
+vim.call('plug#end')
+
+
