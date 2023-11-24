@@ -21,6 +21,7 @@ Plug('drewtempelmeyer/palenight.vim')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', { tag = '0.1.4' })
 Plug('xiyaowong/transparent.nvim')
+Plug('tpope/vim-sleuth')
 -- Javascript
 Plug('pangloss/vim-javascript')
 Plug('leafgarland/typescript-vim')
@@ -30,4 +31,4 @@ Plug('jparise/vim-graphql')
 Plug('neoclide/coc.nvim', {branch = 'release'})
 vim.call('plug#end')
 
-
+require('telescope')

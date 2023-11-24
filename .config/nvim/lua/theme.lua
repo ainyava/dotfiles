@@ -1,4 +1,5 @@
 -- Enable Syntax highlighting
+vim.opt.guifont='Comic Mono'
 vim.g.syntax = true
 
 -- Enable 256 colors pallete in terminal
