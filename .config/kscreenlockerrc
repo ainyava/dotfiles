@@ -1,0 +1,7 @@
+[Daemon]
+LockGrace=60
+Timeout=20
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/Ainyava
+SlidePaths=/usr/share/wallpapers/

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Categories=System;Monitor;
+Comment=Does the initial wallpaper setup
+Exec=bash -c "plasma-apply-wallpaperimage /usr/share/wallpapers/Ainyava/contents/images/1920x1080.jpg; rm ~/.config/autostart/wallpaper-setup.desktop"
+Icon=setup
+Name=Initial Wallpaper setup
+StartupNotify=false
+Terminal=false
+Type=Application

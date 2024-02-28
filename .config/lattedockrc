@@ -1,0 +1,40 @@
+[LatteSettingsDialog]
+downloadWindowSize=980,600
+windowSize=1100,750
+
+[LatteSettingsDialog][DetailsDialog]
+windowSize=560,640
+
+[LatteSettingsDialog][TabLayouts]
+columnWidths=49,508,129,104
+sortColumn=3
+sortOrder=0
+
+[PlasmaThemeExtended]
+outlineWidth=1
+
+[ScreenConnectors]
+10=HDMI-0:::0,0 1920x1080
+11=HDMI-1:::0,0 1920x1080
+12=HDMI-A-1:::0,0 1920x1080
+13=:::0,0 0x0
+14=Unknown-1:::0,0 1920x1080
+
+[UniversalSettings]
+badges3DStyle=false
+canDisableBorders=true
+contextMenuActionsAlwaysShown=_layouts,_preferences,_quit_latte,_separator1,_add_latte_widgets,_add_view
+inAdvancedModeForEditSettings=false
+inConfigureAppletsMode=false
+isAvailableGeometryBroadcastedToPlasma=true
+launchers=
+memoryUsage=0
+metaPressAndHoldEnabled=true
+mouseSensitivity=2
+parabolicSpread=3
+parabolicThicknessMarginInfluence=1
+screenTrackerInterval=2500
+showInfoWindow=true
+singleModeLayoutName=Ainyava
+userConfiguredAutostart=true
+version=2
