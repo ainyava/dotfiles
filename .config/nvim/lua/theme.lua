@@ -19,9 +19,9 @@ vim.g.encoding= 'utf8'
 vim.g.NERDTreeWinSize = 23
 
 -- Select color scheme
-vim.cmd('colorscheme palenight')
-vim.g.lightline = { colorscheme = 'palenight' }
-vim.g.airline_theme = 'palenight'
+vim.cmd('colorscheme onedark')
+vim.g.lightline = { colorscheme = 'onedark' }
+vim.g.airline_theme = 'onedark'
 
 require("transparent").setup({ -- Optional, you don't have to run setup.
   groups = { -- table: default groups
