@@ -2,9 +2,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 Plug('crispgm/nvim-tabline')
-Plug('nvim-tree/nvim-tree.lua')
 Plug('nvim-tree/nvim-web-devicons')
-Plug('Xuyuanp/nerdtree-git-plugin')
 Plug('ryanoasis/vim-devicons')
 Plug('tiagofumo/vim-nerdtree-syntax-highlight')
 Plug('preservim/nerdcommenter')
