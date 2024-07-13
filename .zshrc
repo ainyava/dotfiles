@@ -42,3 +42,10 @@ alias wtc='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
 
 export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
+
+# vscode variant configs
+alias gocode="code --user-data-dir=$HOME/.config/vscode/go --extensions-dir=$HOME/.config/vscode/go/extensions"
+alias rustcode="code --user-data-dir=$HOME/.config/vscode/rust --extensions-dir=$HOME/.config/vscode/rust/extensions"
+alias ccode="code --user-data-dir=$HOME/.config/vscode/c --extensions-dir=$HOME/.config/vscode/c/extensions"
+alias pycode="code --user-data-dir=$HOME/.config/vscode/python --extensions-dir=$HOME/.config/vscode/python/extensions"
+alias jscode="code --user-data-dir=$HOME/.config/vscode/js --extensions-dir=$HOME/.config/vscode/js/extensions"

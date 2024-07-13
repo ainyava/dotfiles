@@ -1,0 +1,20 @@
+{
+    "editor.fontFamily": "Comic Mono",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "files.eol": "\n",
+    "security.workspace.trust.banner": "always",
+    "security.workspace.trust.startupPrompt": "always",
+    "bracketPairColorizer.depreciation-notice": false,
+    "workbench.colorTheme": "Juno One Dark",
+    "workbench.startupEditor": "none",
+    "workbench.editor.empty.hint": "hidden",
+    "redhat.telemetry.enabled": true,
+    "continue.enableTabAutocomplete": false,
+    "git.openRepositoryInParentFolders": "never"
+}
