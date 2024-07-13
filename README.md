@@ -8,7 +8,5 @@ here's my ricing, scripts, configurations and other stuff!
 - desktop environment configs/plugins/themes
 
 
-### KDE/Plasma?
-I used to be KDE/Plasma fan but due to some bad expriences on some hardware I've switched to Gnome
-
-If you're looking for Plasma configurations see [Plasma branch](https://github.com/ainyava/dotfiles/tree/plasma).
+### Gnome?
+If you're looking for Gnome configurations see [Main branch](https://github.com/ainyava/dotfiles).
