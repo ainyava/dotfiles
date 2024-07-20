@@ -40,6 +40,8 @@ eval $(thefuck --alias)
 alias dfimage="docker run -v /var/run/docker.sock:/var/run/docker.sock --rm chenzj/dfimage"
 alias wtc='git commit -m "$(curl -s https://whatthecommit.com/index.txt)"'
 alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive"
+alias copy="xclip -sel clip"
+alias xpaste="xclip -o -selection clipboard"
 
 export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
 
@@ -49,3 +51,5 @@ alias rustcode="code --user-data-dir=$HOME/.config/vscode/rust --extensions-dir=
 alias ccode="code --user-data-dir=$HOME/.config/vscode/c --extensions-dir=$HOME/.config/vscode/c/extensions"
 alias pycode="code --user-data-dir=$HOME/.config/vscode/python --extensions-dir=$HOME/.config/vscode/python/extensions"
 alias jscode="code --user-data-dir=$HOME/.config/vscode/js --extensions-dir=$HOME/.config/vscode/js/extensions"
+
+
