@@ -207,3 +207,26 @@ require('lspconfig').ruff_lsp.setup {
         }
     }
 }
+require('formatter').setup({
+  filetype = {
+    python = {
+      -- Use ruff for formatting Python files
+      function()
+        return {
+          exe = "ruff", -- ensure `ruff` is in your PATH
+          args = {"check", "--fix", "--exit-zero", "--no-cache", "--quiet", vim.api.nvim_buf_get_name(0)},
+          stdin = false,
+        }
+      end,
+    },
+  },
+})
+local augroup = vim.api.nvim_create_augroup
+local autocmd = vim.api.nvim_create_autocmd
+augroup("__formatter__", { clear = true })
+autocmd("BufWritePost", {
+        group = "__formatter__",
+        pattern = "*.py",
+        command = ":lua vim.lsp.buf.format()",
+})
+

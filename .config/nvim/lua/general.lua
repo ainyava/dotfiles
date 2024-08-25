@@ -34,5 +34,3 @@ if vim.fn.has('unnamedplus') then
 else
     vim.g.clipboard = 'unnamed'
 end
-
-vim.g.NERDTreeMapOpenInTab = '<ENTER>'

@@ -41,6 +41,7 @@ Plug 'wbthomason/packer.nvim'
 Plug 'mrcjkb/rustaceanvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'mhartington/formatter.nvim'
 vim.call('plug#end')
 
 require('telescope')
