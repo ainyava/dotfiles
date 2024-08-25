@@ -28,7 +28,17 @@ Plug('leafgarland/typescript-vim')
 Plug('peitalin/vim-jsx-typescript')
 Plug('styled-components/vim-styled-components', { branch = 'main' })
 Plug('jparise/vim-graphql')
-Plug('neoclide/coc.nvim', {branch = 'release'})
+-- Completion
+Plug 'neovim/nvim-lspconfig'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-vsnip'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'wbthomason/packer.nvim'
+Plug 'mrcjkb/rustaceanvim'
 vim.call('plug#end')
 
 require('telescope')
