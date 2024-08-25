@@ -178,3 +178,32 @@ vim.keymap.set(
   end,
   { silent = true, buffer = bufnr }
 )
+-- python
+-- Setup LSP with nvim-cmp capabilities
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+-- Ensure the LSP servers you want are installed using mason
+require("mason").setup()
+require("mason-lspconfig").setup({
+    ensure_installed = { "pyright", "ruff_lsp" }
+})
+
+-- Setup pyright with LSP capabilities
+require('lspconfig').pyright.setup {
+    capabilities = capabilities
+}
+
+-- Setup ruff-lsp
+require('lspconfig').ruff_lsp.setup {
+    capabilities = capabilities,
+    on_attach = function(client, bufnr)
+        -- Optional: Disable Pyright's linting since Ruff is handling that
+        client.server_capabilities.documentFormattingProvider = false
+        client.server_capabilities.documentRangeFormattingProvider = false
+    end,
+    init_options = {
+        settings = {
+            -- Adjust your Ruff settings here, such as rules or severity levels
+        }
+    }
+}

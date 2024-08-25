@@ -39,6 +39,8 @@ Plug 'hrsh7th/cmp-vsnip'
 Plug 'hrsh7th/vim-vsnip'
 Plug 'wbthomason/packer.nvim'
 Plug 'mrcjkb/rustaceanvim'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
 vim.call('plug#end')
 
 require('telescope')
