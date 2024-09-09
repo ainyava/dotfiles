@@ -1,0 +1,39 @@
+#!/bin/sh
+
+echo "[+] Installing common extensions"
+
+# General
+code --install-extension aaron-bond.better-comments
+code --install-extension lusignan.juno-one-dark
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension naumovs.color-highlight
+code --install-extension christian-kohler.path-intellisense
+code --install-extension pkief.material-icon-theme
+code --install-extension redhat.vscode-yaml
+
+# go
+echo "[+] Installing golang specific extensions"
+code --install-extension golang.Go
+
+# rust
+echo "[+] Installing rust specific extensions"
+code --install-extension rust-lang.rust-analyzer
+
+# c
+echo "[+] Installing c specific extensions"
+code --install-extension ms-vscode.cpptools
+code --install-extension xaver.clang-format
+
+# python
+echo "[+] Installing python specific extensions"
+code --install-extension ms-python.python
+code --install-extension charliermarsh.ruff
+code --install-extension ms-toolsai.jupyter
+code --install-extension jithurjacob.nbpreviewer > /dev/null
+
+# js
+echo "[+] Installing javascript specific extensions"
+code --install-extension aeschli.vscode-css-formatter
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dawhite.mustache
+code --install-extension esbenp.prettier-vscode

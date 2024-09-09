@@ -13,10 +13,35 @@
     "bracketPairColorizer.depreciation-notice": false,
     "workbench.colorTheme": "Juno One Dark",
     "workbench.startupEditor": "none",
+    "python.formatting.provider": "black",
+    "vim.useSystemClipboard": true,
+    // "workbench.activityBar.location": "hidden",
     "workbench.editor.empty.hint": "hidden",
     "redhat.telemetry.enabled": true,
     "continue.enableTabAutocomplete": false,
     "git.openRepositoryInParentFolders": "never",
+    // C / C++
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    // Go
+    "[go]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+    // Rust
+    // Python
+    "ruff.nativeServer": true,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true
+    },
+    // Javascript
     "[javascript]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "vscode.typescript-language-features"
