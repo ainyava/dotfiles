@@ -27,8 +27,16 @@
     // Go
     "[go]": {
         "editor.formatOnSave": true,
-        "editor.defaultFormatter": "golang.go"
     },
+    "go.useLanguageServer": true,
+    "gopls": {
+        "formatting.gofumpt": true,
+    },
+    "go.formatTool": "gofumpt",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
     // Rust
     // Python
     "ruff.nativeServer": true,
