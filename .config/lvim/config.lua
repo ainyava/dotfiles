@@ -30,3 +30,22 @@ lvim.keys.normal_mode["<C-`>"] = ":ToggleTerm<cr>"
 -- Ensure this line is present to load the configurations
 lvim.builtin.which_key.mappings = lvim.keys
 
+-- Debugging Setup (nvim-dap)
+lvim.builtin.dap.active = true
+
+-- Start debugging: F5 (similar to VSCode)
+lvim.keys.normal_mode["<F5>"] = ":lua require'dap'.continue()<CR>"
+
+-- Step over: F10
+lvim.keys.normal_mode["<F10>"] = ":lua require'dap'.step_over()<CR>"
+
+-- Step into: F11
+lvim.keys.normal_mode["<F11>"] = ":lua require'dap'.step_into()<CR>"
+
+-- Step out: Shift + F11
+lvim.keys.normal_mode["<S-F11>"] = ":lua require'dap'.step_out()<CR>"
+
+-- Toggle breakpoint: F9
+lvim.keys.normal_mode["<F9>"] = ":lua require'dap'.toggle_breakpoint()<CR>"
+
+
