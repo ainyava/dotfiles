@@ -1,0 +1,18 @@
+window:
+  class:
+    general: Alacritty
+    instance: Lvim
+
+font:
+  normal:
+    family: "ComicShannsMono Nerd Font"
+    style: Regular
+  size: 16.0
+
+env:
+  Lvim:
+    font:
+      normal:
+        family: "ComicShannsMono Nerd Font"
+        style: Regular
+      size: 15.0

@@ -43,6 +43,10 @@ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wa
 alias copy="xclip -sel clip"
 alias xpaste="xclip -o -selection clipboard"
 
+function openlvim() {
+    alacritty --class Lvim -e lvim "$1"
+}
+
 export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
 
 # vscode variant configs
@@ -51,5 +55,4 @@ alias rustcode="code --user-data-dir=$HOME/.config/vscode/rust --extensions-dir=
 alias ccode="code --user-data-dir=$HOME/.config/vscode/c --extensions-dir=$HOME/.config/vscode/c/extensions"
 alias pycode="code --user-data-dir=$HOME/.config/vscode/python --extensions-dir=$HOME/.config/vscode/python/extensions"
 alias jscode="code --user-data-dir=$HOME/.config/vscode/js --extensions-dir=$HOME/.config/vscode/js/extensions"
-
 

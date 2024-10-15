@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=LunarVim
+Comment=Edit files using LunarVim
+Exec=alacritty --class Lvim -e lvim
+Icon=lvim
+Terminal=false
+Type=Application
+Categories=Utility;TextEditor;
+StartupWMClass=Lvim
+
