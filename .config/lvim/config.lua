@@ -48,6 +48,9 @@ lvim.keys.normal_mode["<S-F11>"] = ":lua require'dap'.step_out()<CR>"
 -- Toggle breakpoint: F9
 lvim.keys.normal_mode["<F9>"] = ":lua require'dap'.toggle_breakpoint()<CR>"
 
+lvim.keys.normal_mode["gt"] = ":BufferLineCycleNext<CR>"
+lvim.keys.normal_mode["gT"] = ":BufferLineCyclePrev<CR>"
+
 -- Onedark
 lvim.plugins = {
     {"joshdick/onedark.vim"}
