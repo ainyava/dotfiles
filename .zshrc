@@ -1,11 +1,17 @@
 export ZSH="$HOME/.oh-my-zsh"
 
+
+# zsh
 ZSH_THEME="bira"
 plugins=(git zsh-autosuggestions golang argocd kubectl kube-ps1 ansible helm nmap rust fzf-zsh-plugin)
 
 source $ZSH/oh-my-zsh.sh
 
 export TERM=xterm-256color
+export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # kubectl
 export KUBE_EDITOR=nvim
@@ -46,13 +52,31 @@ alias xpaste="xclip -o -selection clipboard"
 function openlvim() {
     alacritty --class Lvim -e lvim "$1"
 }
+function uvvenv() {
+  uv virtualenv ~/.uv/$1;
+}
+function uvactivate() {
+  source ~/.uv/$1/bin/activate;
+}
 
-export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
+# ripgrep->fzf->vim [QUERY]
+rfv() (
+  RELOAD='reload:rg --column --color=always --smart-case {q} || :'
+  OPENER='if [[ $FZF_SELECT_COUNT -eq 0 ]]; then
+            nvim {1} +{2}     # No selection. Open the current line in Vim.
+          else
+            nvim +cw -q {+f}  # Build quickfix list for the selected items.
+          fi'
+  fzf --disabled --ansi --multi \
+      --bind "start:$RELOAD" --bind "change:$RELOAD" \
+      --bind "enter:become:$OPENER" \
+      --bind "ctrl-o:execute:$OPENER" \
+      --bind 'alt-a:select-all,alt-d:deselect-all,ctrl-/:toggle-preview' \
+      --delimiter : \
+      --preview 'bat --style=full --color=always --highlight-line {2} {1}' \
+      --preview-window '~4,+{2}+4/3,<80(up)' \
+      --query "$*"
+)
 
-# vscode variant configs
-alias gocode="code --user-data-dir=$HOME/.config/vscode/go --extensions-dir=$HOME/.config/vscode/go/extensions"
-alias rustcode="code --user-data-dir=$HOME/.config/vscode/rust --extensions-dir=$HOME/.config/vscode/rust/extensions"
-alias ccode="code --user-data-dir=$HOME/.config/vscode/c --extensions-dir=$HOME/.config/vscode/c/extensions"
-alias pycode="code --user-data-dir=$HOME/.config/vscode/python --extensions-dir=$HOME/.config/vscode/python/extensions"
-alias jscode="code --user-data-dir=$HOME/.config/vscode/js --extensions-dir=$HOME/.config/vscode/js/extensions"
-
+# welcome
+fortune | cowsay -f /usr/share/cowsay/cows/eyes.cow | centerize | lolcat 
