@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=NeoVim
+Comment=Edit files using NeoVim
+Exec=alacritty --class Neovim -e nvim
+Icon=nvim
+Terminal=false
+Type=Application
+Categories=Utility;TextEditor;
+StartupWMClass=Neovim
+

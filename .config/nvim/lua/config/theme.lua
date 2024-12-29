@@ -1,5 +1,5 @@
 -- Enable Syntax highlighting
-vim.opt.guifont = "Comic Mono"
+vim.opt.guifont = "ComicMonoNF"
 vim.g.syntax = true
 
 -- Enable 256 colors pallete in terminal
@@ -17,6 +17,7 @@ vim.g.NERDTreeWinSize = 23
 -- Select color scheme
 require("onedark").setup({
   style = "darker",
+  transparent = true,
 })
 require("onedark").load()
 
