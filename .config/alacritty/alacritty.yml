@@ -1,18 +1,11 @@
 window:
+  opacity: 0.93
   class:
     general: Alacritty
-    instance: Lvim
+    instance: NeoVim
 
 font:
   normal:
-    family: "ComicShannsMono Nerd Font"
+    family: "ComicMonoNF"
     style: Regular
-  size: 16.0
-
-env:
-  Lvim:
-    font:
-      normal:
-        family: "ComicShannsMono Nerd Font"
-        style: Regular
-      size: 15.0
+  size: 15.0
