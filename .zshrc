@@ -49,9 +49,16 @@ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wa
 alias copy="xclip -sel clip"
 alias xpaste="xclip -o -selection clipboard"
 
-function openlvim() {
-    alacritty --class Lvim -e lvim "$1"
+
+function nv() {
+  alacritty --class NeoVim -e zsh -c "source ~/.zshrc && cd \"$1\" && nvim ." & disown
 }
+
+function uvnv() {
+  alacritty --class NeoVim -e zsh -c "source ~/.zshrc && uvactivate $1 && cd \"$2\" && nvim ." & disown
+
+}
+
 function uvvenv() {
   uv virtualenv ~/.uv/$1;
 }
