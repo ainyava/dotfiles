@@ -16,7 +16,7 @@ vim.g.NERDTreeWinSize = 23
 
 -- Select color scheme
 require("onedark").setup({
-  style = "darker",
+  style = "warmer",
   transparent = true,
 })
 require("onedark").load()
