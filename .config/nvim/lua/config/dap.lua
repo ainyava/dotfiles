@@ -14,13 +14,13 @@ dap.configurations.python = {
     request = "launch",
     name = "Launch Uvicorn",
     module = "uvicorn",
-    args = { "xperix_generator:app", "--reload" },
+    args = { "main:app", "--reload" },
   },
   {
     type = "python",
     request = "launch",
     name = "Launch Celery Worker",
     module = "celery",
-    args = { "--app", "xperix_generator.celery", "worker", "--loglevel=info", "--concurrency=1" },
+    args = { "--app", "main.celery", "worker", "--loglevel=info", "--concurrency=1" },
   },
 }
