@@ -48,7 +48,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 
 # start launcher
-bindsym $mod+/ exec --no-startup-id rofi -modi drun,run -show
+bindsym $mod+slash exec --no-startup-id rofi -show
 
 # change focus
 bindsym $mod+j focus left
