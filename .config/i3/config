@@ -8,6 +8,7 @@
 
 # set <super> key as mod key
 set $mod Mod4
+set $alt Mod1
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -49,6 +50,8 @@ bindsym $mod+q kill
 
 # start launcher
 bindsym $mod+slash exec --no-startup-id rofi -show
+
+bindsym $alt+Tab exec --no-startup-id rofi -modi window -show
 
 # change focus
 bindsym $mod+j focus left
