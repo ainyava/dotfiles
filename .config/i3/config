@@ -39,6 +39,12 @@ exec --no-startup-id polybar
 # lockscreen
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
+# Startup apps
+exec --no-startup-id i3-msg 'workspace 1; exec konsole'
+exec --no-startup-id i3-msg 'workspace 2; exec konsole'
+exec --no-startup-id i3-msg 'workspace 3; exec google-chrome'
+exec --no-startup-id i3-msg 'workspace 4; exec nekoray'
+
 
 ### Keybindings
 
