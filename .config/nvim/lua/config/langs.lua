@@ -7,7 +7,16 @@ end
 
 dap.configurations.python = {
   {
-    name = "uvicorn",
+    name = "django",
+    type = "python",
+    request = "launch",
+    args = { "manage.py", "runserver" },
+    pythonPath = function()
+      return "python"
+    end,
+  },
+  {
+    name = "fastapi",
     type = "python",
     request = "launch",
     module = "uvicorn",
