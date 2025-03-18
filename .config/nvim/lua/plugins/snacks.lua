@@ -1,9 +1,10 @@
 return {
-    "snacks.nvim",
-    opts = {
-      dashboard = {
-        preset = {
-          header = [[
+  "snacks.nvim",
+  opts = {
+    indent = { enabled = false },
+    dashboard = {
+      preset = {
+        header = [[
           █████╗  ██╗███╗   ██╗ ██╗   ██╗█████╗ ██╗   ██╗ █████╗   
           ██╔══██╗██║████╗  ██║ ╚██╗ ██╔╝██╔══██╗██║   ██║██╔══██╗
           ███████║██║██╔██╗ ██║  ╚████╔╝ ███████║██║   ██║███████║
@@ -24,7 +25,7 @@ return {
             { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy" },
             { icon = " ", key = "q", desc = "Quit", action = ":qa" },
           },
-        },
       },
     },
-  }
+  },
+}
