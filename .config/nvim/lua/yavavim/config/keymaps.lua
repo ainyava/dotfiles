@@ -228,12 +228,8 @@ end
 -- Disable default CtrlP
 vim.g.loaded_ctrlp = 1
 
-local keyset = vim.keymap.set
-local command = vim.api.nvim_command
+-- file picker
+map({"n", "i", "v"}, "<C-p>", function() Snacks.picker.files() end)
 
--- Telescope
-local telescope_builtin = require("telescope.builtin")
-keyset("n", "<C-p>", telescope_builtin.find_files, {})
-
--- NvimTree
-vim.keymap.set("n", "<C-b>", "<Cmd>Neotree toggle<CR>")
+-- explorer
+map({"n", "i", "v"}, "<C-b>", function() Snacks.explorer() end)
