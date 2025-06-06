@@ -5,11 +5,13 @@ return {
   opts = {
     provider = "ollama",
     auto_suggestions_provider = "ollama",
-    ollama = {
-      model = "qwen2.5-coder:1.5b",
-      timeout = 30000,
-      temperature = 0,
-      max_tokens = 8192,
+    providers= {
+      ollama = {
+        model = "qwen2.5-coder:1.5b",
+        timeout = 30000,
+        temperature = 0,
+        max_tokens = 8192,
+      },
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
