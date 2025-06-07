@@ -1,5 +1,6 @@
 return {
     "mason-org/mason.nvim",
+    enabled = vim.g.use_mason,
     cmd = "Mason",
     keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
     build = ":MasonUpdate",

@@ -8,7 +8,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
-      ensure_installed = { "pyright", "ruff", "ruff-lsp"},
+      ensure_installed = { "pyright", "ruff", "ruff-lsp" },
     },
   },
   {
@@ -20,10 +20,11 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function(_, opts)
-      vim.lsp.enable('basedpyright')
-      vim.lsp.enable('pyright')
-      vim.lsp.enable('ruff')
-      vim.lsp.enable('ruff_lsp')
+      if not vim.g.use_mason then
+        vim.lsp.enable('pyright')
+        vim.lsp.enable('ruff')
+        vim.lsp.enable('ruff_lsp')
+      end
     end
   },
   {
