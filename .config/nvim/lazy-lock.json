@@ -1,9 +1,9 @@
 {
-  "avante.nvim": { "branch": "main", "commit": "2dd4c040880b271861369b361489a2d418d42648" },
+  "avante.nvim": { "branch": "main", "commit": "687da816f9088b3c803d62ea7f5a14302552ff88" },
   "blink.cmp": { "branch": "main", "commit": "86239578da58dff5ca43c3ebc992f184ee64354f" },
   "bufferline.nvim": { "branch": "main", "commit": "655133c3b4c3e5e05ec549b9f8cc2894ac6f51b3" },
   "conform.nvim": { "branch": "master", "commit": "0e93e0d12d2f7ebdea9e3e444dfaff0050cefbe6" },
-  "copilot.lua": { "branch": "master", "commit": "c1bb86abbed1a52a11ab3944ef00c8410520543d" },
+  "copilot.lua": { "branch": "master", "commit": "228cd7456fd923b8da3eb6497bb345de58b93637" },
   "dressing.nvim": { "branch": "master", "commit": "2d7c2db2507fa3c4956142ee607431ddb2828639" },
   "flash.nvim": { "branch": "main", "commit": "3c942666f115e2811e959eabbdd361a025db8b63" },
   "friendly-snippets": { "branch": "main", "commit": "572f5660cf05f8cd8834e096d7b4c921ba18e175" },

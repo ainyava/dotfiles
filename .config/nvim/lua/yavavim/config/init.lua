@@ -1,6 +1,9 @@
 -- Setup lazy plugin manager
 require('yavavim.config.lazy')
 
+-- Setup themes
+require('yavavim.config.theme')
+
 -- Setup global nvim configurations
 require('yavavim.config.options')
 
@@ -9,8 +12,5 @@ require('yavavim.config.keymaps')
 
 -- Setup autocommands
 require('yavavim.config.autocmds')
-
--- Setup themes
-require('yavavim.config.theme')
 
 -- Setup programming language configs
