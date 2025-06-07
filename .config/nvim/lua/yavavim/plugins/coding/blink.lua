@@ -23,14 +23,8 @@ return {
     },
     event = "InsertEnter",
 
-    ---@module 'blink.cmp'
-    ---@type blink.cmp.Config
     opts = {
-      snippets = {
-        expand = function(snippet, _)
-          return LazyVim.cmp.expand(snippet)
-        end,
-      },
+      snippets = {},
       appearance = {
         -- sets the fallback highlight groups to nvim-cmp's highlight groups
         -- useful for when your theme doesn't support blink.cmp
@@ -80,7 +74,6 @@ return {
         ["<C-y>"] = { "select_and_accept" },
       },
     },
-    ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
     config = function(_, opts)
       -- setup compat sources
       local enabled = opts.sources.default
@@ -100,7 +93,6 @@ return {
 
       -- check if we need to override symbol kinds
       for _, provider in pairs(opts.sources.providers or {}) do
-        ---@cast provider blink.cmp.SourceProviderConfig|{kind?:string}
         if provider.kind then
           local CompletionItemKind = require("blink.cmp.types").CompletionItemKind
           local kind_idx = #CompletionItemKind + 1
@@ -109,10 +101,7 @@ return {
           ---@diagnostic disable-next-line: no-unknown
           CompletionItemKind[provider.kind] = kind_idx
 
-          ---@type fun(ctx: blink.cmp.Context, items: blink.cmp.CompletionItem[]): blink.cmp.CompletionItem[]
           local transform_items = provider.transform_items
-          ---@param ctx blink.cmp.Context
-          ---@param items blink.cmp.CompletionItem[]
           provider.transform_items = function(ctx, items)
             items = transform_items and transform_items(ctx, items) or items
             for _, item in ipairs(items) do
