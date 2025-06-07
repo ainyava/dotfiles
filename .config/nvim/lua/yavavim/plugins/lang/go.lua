@@ -6,6 +6,12 @@ return {
   },
   -- lspconfig
   {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = { "gopls", "goimports", "gofumpt"},
+    },
+  },
+  {
     "mason-org/mason-lspconfig.nvim",
     opts = {
       ensure_installed = { "gopls" },
@@ -32,10 +38,6 @@ return {
         },
       },
     },
-  },
-  {
-    "mason-org/mason.nvim",
-    opts = { ensure_installed = { "goimports", "gofumpt" } },
   },
   {
     "mfussenegger/nvim-dap",

@@ -6,9 +6,15 @@ return {
   },
   -- lspconfig
   {
+    "mason-org/mason.nvim",
+    opts = {
+      ensure_installed = { "pyright", "ruff", "ruff-lsp"},
+    },
+  },
+  {
     "mason-org/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = { "pyright", "ruff", "ruff-lsp" },
+      ensure_installed = { "pyright", "ruff" },
     },
   },
   {
