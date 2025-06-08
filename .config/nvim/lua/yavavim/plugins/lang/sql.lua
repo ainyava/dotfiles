@@ -17,12 +17,7 @@ return {
   {
     "kristijanhusak/vim-dadbod-completion",
     dependencies = "vim-dadbod",
-    ft = sql_ft,
-    init = function()
-      vim.api.nvim_create_autocmd("FileType", {
-        pattern = sql_ft,
-      })
-    end,
+    ft = sql_ft
   },
   {
     "saghen/blink.cmp",
