@@ -3,10 +3,12 @@ return {
     "hrsh7th/nvim-cmp",
     optional = true,
     enabled = false,
+    cond = not vim.g.vscode,
   },
   {
     "saghen/blink.cmp",
     build = vim.g.lazyvim_blink_main and "cargo build --release",
+    cond = not vim.g.vscode,
     opts_extend = {
       "sources.completion.enabled_providers",
       "sources.compat",
@@ -123,6 +125,7 @@ return {
   -- add icons
   {
     "saghen/blink.cmp",
+    cond = not vim.g.vscode,
     opts = function(_, opts)
       opts.appearance = opts.appearance or {}
       opts.appearance.kind_icons = vim.tbl_extend("force", opts.appearance.kind_icons or {},
@@ -133,6 +136,7 @@ return {
   -- lazydev
   {
     "saghen/blink.cmp",
+    cond = not vim.g.vscode,
     opts = {
       sources = {
         -- add lazydev to your completion providers

@@ -1,6 +1,7 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    cond = not vim.g.vscode,
     recommended = true,
     desc = "Debugging support. Requires language specific adapters to be configured. (see lang extras)",
 
@@ -35,7 +36,6 @@ return {
     },
 
     config = function()
-
       vim.api.nvim_set_hl(0, "DapStoppedLine", { default = true, link = "Visual" })
 
       for name, sign in pairs(YavaVim.icons.dap) do
@@ -56,6 +56,7 @@ return {
   },
   {
     "rcarriga/nvim-dap-ui",
+    cond = not vim.g.vscode,
     -- virtual text for the debugger
     {
       "theHamsta/nvim-dap-virtual-text",
@@ -64,15 +65,17 @@ return {
   },
   {
     "theHamsta/nvim-dap-virtual-text",
+    cond = not vim.g.vscode,
     opts = {},
   },
   {
     "rcarriga/nvim-dap-ui",
+    cond = not vim.g.vscode,
     dependencies = { "nvim-neotest/nvim-nio" },
     -- stylua: ignore
     keys = {
-      { "<leader>du", function() require("dapui").toggle({ }) end, desc = "Dap UI" },
-      { "<leader>de", function() require("dapui").eval() end, desc = "Eval", mode = {"n", "v"} },
+      { "<leader>du", function() require("dapui").toggle({}) end, desc = "Dap UI" },
+      { "<leader>de", function() require("dapui").eval() end,     desc = "Eval",  mode = { "n", "v" } },
     },
     opts = {},
     config = function(_, opts)
@@ -90,21 +93,25 @@ return {
       end
     end,
   },
-  { "nvim-neotest/nvim-nio" },
+  {
+    "nvim-neotest/nvim-nio",
+    cond = not vim.g.vscode,
+  },
   {
     "jay-babu/mason-nvim-dap.nvim",
     enabled = vim.g.use_mason,
+    cond = not vim.g.vscode,
     dependencies = "mason.nvim",
     cmd = { "DapInstall", "DapUninstall" },
     opts = {
       -- Makes a best effort to setup the various debuggers with
       -- reasonable debug configurations
       automatic_installation = true,
-  
+
       -- You can provide additional configuration to the handlers,
       -- see mason-nvim-dap README for more information
       handlers = {},
-  
+
       -- You'll need to check that you have the required things installed
       -- online, please don't ask me how to install them :)
       ensure_installed = {
