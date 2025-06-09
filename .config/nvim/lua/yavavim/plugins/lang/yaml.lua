@@ -62,4 +62,16 @@ return {
       },
     },
   },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    dependencies = {},
+    ft = 'yaml',
+    lazy = true,
+    opts = {
+      formatters_by_ft = {
+        yaml = { "prettier" },
+      },
+    }
+  },
 }

@@ -72,4 +72,17 @@ return {
     ft = "python",
     keys = { { "<leader>cv", "<cmd>:VenvSelect<cr>", desc = "Select VirtualEnv", ft = "python" } },
   },
+  -- formatter
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    dependencies = {},
+    ft = 'python',
+    lazy = true,
+    opts = {
+      formatters_by_ft = {
+        yaml = { "ruff_format" },
+      },
+    }
+  }
 }

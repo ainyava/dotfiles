@@ -2,6 +2,7 @@ return {
   {
     "stevearc/conform.nvim",
     optional = true,
+    ft = {'markdown', 'markdown.mdx'},
     opts = {
       formatters = {
         ["markdown-toc"] = {
