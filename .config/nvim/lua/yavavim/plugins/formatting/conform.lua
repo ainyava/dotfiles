@@ -2,6 +2,7 @@ return {
   {
     "stevearc/conform.nvim",
     dependencies = {},
+    cond = not vim.g.vscode,
     lazy = true,
     cmd = "ConformInfo",
     keys = {
