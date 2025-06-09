@@ -81,8 +81,14 @@ return {
     lazy = true,
     opts = {
       formatters_by_ft = {
-        yaml = { "ruff_format" },
+        yaml = { "ruff_format", "ruff_fix" },
       },
+      formatters = {
+        ruff_fix = {
+          command = "ruff",
+          args = { "--fix", "-e", "-n", "--stdin-filename", "$FILENAME" },
+        },
+      }
     }
   }
 }
