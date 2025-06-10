@@ -1,5 +1,6 @@
 return {
   "echasnovski/mini.icons",
+  cond = not vim.g.vscode,
   lazy = true,
   opts = {
     file = {

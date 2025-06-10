@@ -1,5 +1,6 @@
 return {
     "folke/todo-comments.nvim",
+    cond = not vim.g.vscode,
     cmd = { "TodoTrouble", "TodoTelescope" },
     event = { "BufReadPost", "BufNewFile", "BufWritePre" },
     opts = {},

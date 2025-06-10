@@ -1,5 +1,6 @@
 return {
     "gitsigns.nvim",
+    cond = not vim.g.vscode,
     opts = function()
       Snacks.toggle({
         name = "Git Signs",

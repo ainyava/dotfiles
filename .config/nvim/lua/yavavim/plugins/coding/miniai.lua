@@ -1,6 +1,7 @@
 return {
   "echasnovski/mini.ai",
   event = "VeryLazy",
+  cond = not vim.g.vscode,
   opts = function()
     local ai = require("mini.ai")
     return {

@@ -4,6 +4,7 @@ return {
 
   {
     "folke/snacks.nvim",
+    cond = not vim.g.vscode,
     opts = {
       picker = {},
       explorer = {},
@@ -112,6 +113,7 @@ return {
   },
   {
     "folke/todo-comments.nvim",
+    cond = not vim.g.vscode,
     optional = true,
     keys = {
       { "<leader>st", function() Snacks.picker.todo_comments() end,                                           desc = "Todo" },
@@ -120,6 +122,7 @@ return {
   },
   {
     "folke/trouble.nvim",
+    cond = not vim.g.vscode,
     optional = true,
     specs = {
       "folke/snacks.nvim",

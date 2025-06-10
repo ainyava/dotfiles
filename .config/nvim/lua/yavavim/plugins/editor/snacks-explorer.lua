@@ -1,5 +1,6 @@
 return {
   desc = "Snacks File Explorer",
+  cond = not vim.g.vscode,
   recommended = true,
   "folke/snacks.nvim",
   opts = { explorer = {} },

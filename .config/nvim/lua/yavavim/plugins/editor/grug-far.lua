@@ -1,5 +1,6 @@
 return {
     "MagicDuck/grug-far.nvim",
+    cond = not vim.g.vscode,
     opts = { headerMaxWidth = 80 },
     cmd = "GrugFar",
     keys = {

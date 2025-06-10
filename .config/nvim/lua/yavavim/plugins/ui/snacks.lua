@@ -1,5 +1,6 @@
 return {
   "folke/snacks.nvim",
+  cond = not vim.g.vscode,
   lazy = false,
   opts = {
     indent = { enabled = false },
