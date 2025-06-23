@@ -1,39 +1,50 @@
 #!/bin/sh
 
+function install_ext() {
+    code --install-extension $1
+}
+
 echo "[+] Installing common extensions"
 
 # General
-code --install-extension aaron-bond.better-comments
-code --install-extension lusignan.juno-one-dark
-code --install-extension yzhang.markdown-all-in-one
-code --install-extension naumovs.color-highlight
-code --install-extension christian-kohler.path-intellisense
-code --install-extension pkief.material-icon-theme
-code --install-extension redhat.vscode-yaml
+install_ext aaron-bond.better-comments
+install_ext naumovs.color-highlight
+install_ext christian-kohler.path-intellisense
+install_ext pkief.material-icon-theme
+install_ext GitHub.github-vscode-theme
+
+# markdown
+install_ext yzhang.markdown-all-in-one
+
+# yaml
+install_ext redhat.vscode-yaml
 
 # go
 echo "[+] Installing golang specific extensions"
-code --install-extension golang.Go
+install_ext golang.Go
 
 # rust
 echo "[+] Installing rust specific extensions"
-code --install-extension rust-lang.rust-analyzer
+install_ext rust-lang.rust-analyzer
 
 # c
 echo "[+] Installing c specific extensions"
-code --install-extension ms-vscode.cpptools
-code --install-extension xaver.clang-format
+install_ext ms-vscode.cpptools
+install_ext xaver.clang-format
 
 # python
 echo "[+] Installing python specific extensions"
-code --install-extension ms-python.python
-code --install-extension charliermarsh.ruff
-code --install-extension ms-toolsai.jupyter
-code --install-extension jithurjacob.nbpreviewer > /dev/null
+install_ext ms-python.python
+install_ext charliermarsh.ruff
+install_ext ms-toolsai.jupyter
+install_ext jithurjacob.nbpreviewer > /dev/null
 
 # js
 echo "[+] Installing javascript specific extensions"
-code --install-extension aeschli.vscode-css-formatter
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension dawhite.mustache
-code --install-extension esbenp.prettier-vscode
+install_ext aeschli.vscode-css-formatter
+install_ext dbaeumer.vscode-eslint
+install_ext dawhite.mustache
+install_ext esbenp.prettier-vscode
+
+# ansible
+install_ext redhat.ansible
