@@ -1,5 +1,5 @@
 {
-    "editor.fontFamily": "Comic Mono",
+    "editor.fontFamily": "ComicMonoNF",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
@@ -11,11 +11,7 @@
     "security.workspace.trust.banner": "always",
     "security.workspace.trust.startupPrompt": "always",
     "bracketPairColorizer.depreciation-notice": false,
-    "workbench.colorTheme": "Juno One Dark",
     "workbench.startupEditor": "none",
-    "python.formatting.provider": "black",
-    "vim.useSystemClipboard": true,
-    // "workbench.activityBar.location": "hidden",
     "workbench.editor.empty.hint": "hidden",
     "redhat.telemetry.enabled": true,
     "continue.enableTabAutocomplete": false,
@@ -70,5 +66,8 @@
     },
     "[css]": {
         "editor.defaultFormatter": "aeschli.vscode-css-formatter"
-    }
+    },
+    "workbench.activityBar.location": "top",
+    "window.customTitleBarVisibility": "auto",
+    "workbench.colorTheme": "GitHub Dark"
 }

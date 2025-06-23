@@ -49,6 +49,8 @@ alias dive="docker run -ti --rm  -v /var/run/docker.sock:/var/run/docker.sock wa
 alias copy="xclip -sel clip"
 alias xpaste="xclip -o -selection clipboard"
 
+# Nmap aliases
+alias 'nmap-quick=nmap -n -sn -T5 --max-rtt-timeout 1s --min-parallelism 100'
 
 function nv() {
   alacritty --class NeoVim -e zsh -c "source ~/.zshrc && cd \"$1\" && nvim ." & disown
