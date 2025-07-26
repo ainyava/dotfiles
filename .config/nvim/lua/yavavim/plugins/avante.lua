@@ -1,12 +1,11 @@
 return {
   "yetone/avante.nvim",
-  cond = not vim.g.vscode,
   event = "VeryLazy",
   version = false, -- Never set this value to "*"! Never!
   opts = {
     provider = "ollama",
     auto_suggestions_provider = "ollama",
-    providers= {
+    providers = {
       ollama = {
         model = "qwen2.5-coder:1.5b",
         timeout = 30000,

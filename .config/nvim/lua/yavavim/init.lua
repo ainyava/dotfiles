@@ -1,2 +1,5 @@
-_G.YavaVim = require('yavavim.utils')
-require('yavavim.config')
+require("yavavim.config.lazy")
+require("yavavim.config.theme")
+require("yavavim.config.langs")
+require("yavavim.config.keymaps")
+require("yavavim.config.options")
