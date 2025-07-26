@@ -69,5 +69,6 @@
     },
     "workbench.activityBar.location": "top",
     "window.customTitleBarVisibility": "auto",
-    "workbench.colorTheme": "One Dark Pro Night Flat"
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "http.proxy": "http://localhost:2081"
 }
