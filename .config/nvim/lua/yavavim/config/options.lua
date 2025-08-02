@@ -41,3 +41,7 @@ if vim.fn.has("unnamedplus") then
 else
   vim.g.clipboard = "unnamed"
 end
+
+-- Configure picker and explorer
+vim.g.lazyvim_picker = "snacks"
+vim.g.lazyvim_explorer = "snacks"
