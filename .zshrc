@@ -52,19 +52,10 @@ alias xpaste="xclip -o -selection clipboard"
 # Nmap aliases
 alias 'nmap-quick=nmap -n -sn -T5 --max-rtt-timeout 1s --min-parallelism 100'
 
-function nv() {
-  alacritty --class NeoVim -e zsh -c "source ~/.zshrc && cd \"$1\" && nvim ." & disown
-}
-
-function uvnv() {
-  alacritty --class NeoVim -e zsh -c "source ~/.zshrc && uvactivate $1 && cd \"$2\" && nvim ." & disown
-
-}
-
 function uvvenv() {
   uv virtualenv ~/.uv/$1;
 }
-function uvactivate() {
+function uvsrc() {
   source ~/.uv/$1/bin/activate;
 }
 
