@@ -7,6 +7,7 @@ return {
   },
   {
     "saghen/blink.cmp",
+    version = '1.*',
     build = vim.g.lazyvim_blink_main and "cargo build --release",
     cond = not vim.g.vscode,
     opts_extend = {

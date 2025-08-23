@@ -19,6 +19,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    ft = "go",
     opts = {
       servers = {
         gopls = {
@@ -82,4 +83,16 @@ return {
       },
     },
   },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    dependencies = {},
+    ft = 'go',
+    lazy = true,
+    opts = {
+      formatters_by_ft = {
+        go = { "gofumpt" },
+      },
+    }
+  }
 }

@@ -19,6 +19,7 @@ return {
   },
   {
     "neovim/nvim-lspconfig",
+    ft = "python",
     config = function(_, opts)
       if not vim.g.use_mason then
         vim.lsp.enable('pyright')
@@ -81,7 +82,7 @@ return {
     lazy = true,
     opts = {
       formatters_by_ft = {
-        yaml = { "ruff_format", "ruff_fix" },
+        python = { "ruff_format", "ruff_fix" },
       },
       formatters = {
         ruff_fix = {
