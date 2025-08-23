@@ -58,6 +58,11 @@ function uvvenv() {
 function uvsrc() {
   source ~/.uv/$1/bin/activate;
 }
+# psql
+psql-docker() {
+    docker run --rm -it -v "$(pwd)":/host --network=host postgres "$@"
+}
+
 
 # ripgrep->fzf->vim [QUERY]
 rfv() (
