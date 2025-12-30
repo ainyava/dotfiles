@@ -14,7 +14,7 @@
     "workbench.startupEditor": "none",
     "workbench.editor.empty.hint": "hidden",
     "redhat.telemetry.enabled": true,
-    "continue.enableTabAutocomplete": false,
+    "continue.enableTabAutocomplete": true,
     "git.openRepositoryInParentFolders": "never",
     // C / C++
     "[c]": {
@@ -69,6 +69,27 @@
     },
     "workbench.activityBar.location": "top",
     "window.customTitleBarVisibility": "auto",
-    "workbench.colorTheme": "One Dark Pro Night Flat",
-    "http.proxy": "http://localhost:2081"
+    "workbench.colorTheme": "Base16 Tomorrow",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": false
+    },
+    "http.systemCertificatesNode": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/env": true,
+        "**/venv": true
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/env/**": true,
+        "**/venv/**": true,
+        "env-*": true
+    },
 }
