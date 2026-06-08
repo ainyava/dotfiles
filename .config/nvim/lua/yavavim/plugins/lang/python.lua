@@ -8,7 +8,7 @@ return {
   {
     "mason-org/mason.nvim",
     opts = {
-      ensure_installed = { "pyright", "ruff", "ruff-lsp" },
+      ensure_installed = { "pyright", "ruff"},
     },
   },
   {
@@ -24,7 +24,6 @@ return {
       if not vim.g.use_mason then
         vim.lsp.enable('pyright')
         vim.lsp.enable('ruff')
-        vim.lsp.enable('ruff_lsp')
       end
     end
   },
@@ -87,7 +86,8 @@ return {
       formatters = {
         ruff_fix = {
           command = "ruff",
-          args = { "--fix", "-e", "-n", "--stdin-filename", "$FILENAME" },
+          args = { "check", "--fix", "--force-exclude", "--exit-zero",
+                  "--no-cache", "--stdin-filename", "$FILENAME", "-" },
         },
       }
     }
