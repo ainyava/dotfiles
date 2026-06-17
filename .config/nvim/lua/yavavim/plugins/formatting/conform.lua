@@ -21,7 +21,7 @@ return {
         go = { "goimports", "gofmt" },
         rust = { "rustfmt", lsp_format = "fallback" },
         python =  {"ruff_format"},
-        ["*"] = { "codespell" },
+        ["*"] = { "cspell" },
         ["_"] = { "trim_whitespace" },
       },
       default_format_opts = {
