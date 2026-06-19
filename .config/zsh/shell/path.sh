@@ -1,1 +1,3 @@
-export PATH=$PATH:~/.local/bin:~/.local/programs/go/bin
+export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/go/bin
+export PATH=$PATH:~/.local/programs/go/bin
