@@ -20,7 +20,7 @@ return {
   {
     "neovim/nvim-lspconfig",
     ft = "python",
-    config = function(_, opts)
+    init = function(_, opts)
       if not vim.g.use_mason then
         vim.lsp.enable('pyright')
         vim.lsp.enable('ruff')
