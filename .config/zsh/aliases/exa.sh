@@ -1,2 +1,2 @@
-alias ls='exa'
-alias ll='exa -la'
+alias ls='eza'
+alias ll='eza -la'
