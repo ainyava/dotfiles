@@ -9,6 +9,11 @@ o.window({ tag = "terminal" }, { opacity = "0.97 0.9" })
 -- VS Code: same styling as terminals.
 o.window("code", { opacity = "0.97 0.9" })
 o.window("^org\\.telegram\\.desktop", { float = true, size = { 1024, 768 }, focus_on_activate = false })
+o.window({ class = "^org\\.telegram\\.desktop\\..*" }, {
+	float = true,
+	size = { 1024, 768 },
+	focus_on_activate = false,
+})
 
 -- Kitty dropdown terminal on Omarchy's scratchpad special workspace
 -- (toggled with SUPER+GRAVE / SUPER+S).
