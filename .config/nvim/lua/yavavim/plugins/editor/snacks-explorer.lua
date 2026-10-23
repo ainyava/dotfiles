@@ -1,9 +1,5 @@
 return {
-  desc = "Snacks File Explorer",
-  cond = not vim.g.vscode,
-  recommended = true,
   "folke/snacks.nvim",
-  opts = { explorer = {} },
   keys = {
     {
       "<leader>fe",
@@ -15,7 +11,7 @@ return {
     {
       "<leader>fE",
       function()
-        Snacks.explorer({ cwd = YavaVim.root() })
+        Snacks.explorer({ cwd = LazyVim.root() })
       end,
       desc = "Explorer Snacks (root dir)",
     },

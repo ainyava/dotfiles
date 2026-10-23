@@ -1,1 +1,1 @@
-require("yavavim")
+require("config.lazy")

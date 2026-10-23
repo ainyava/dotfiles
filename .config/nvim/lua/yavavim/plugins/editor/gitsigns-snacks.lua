@@ -1,5 +1,5 @@
 return {
-    "gitsigns.nvim",
+    "lewis6991/gitsigns.nvim",
     cond = not vim.g.vscode,
     opts = function()
       Snacks.toggle({
